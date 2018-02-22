@@ -375,3 +375,10 @@ h3, h1:hover {
   margin-left: 100px;
   margin-bottom: 10px;
 }
+
+/* Contact page */
+
+#map {
+    height: 400px;
+    width: 400px;
+       }
