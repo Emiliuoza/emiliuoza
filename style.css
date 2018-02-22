@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: white;
+  background-color: black;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -15,7 +15,7 @@ h1 {
   float:left;
   margin-top: 50px;
   margin-right: 150px;
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: rgb(255, 204, 102);
@@ -27,7 +27,7 @@ a {
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 15px;
   text-align: center;
@@ -37,10 +37,20 @@ h2 {
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 18px;
   text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: rgb(255, 204, 102);
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center; /* vps nesvarbu koki uzmesi, reikia perdaryti su kiekvienu atskirai */
   margin-left: 100px;
   margin-right: 100px;
   color: rgb(255, 204, 102);
@@ -84,7 +94,7 @@ h3 {
 
 #header img{
   border-radius: 50%;
-  margin-left:
+  margin-left;
   width: 100px;
   height: 100px;
 }
@@ -93,7 +103,7 @@ h3 {
 				width: 1100px;
         height: 700px;
 				margin: 0 auto;
-				background-color: white;
+				background-color: black;
         background-image: url(background.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -105,9 +115,16 @@ h3 {
 				margin-left: 0px;
 			}
 
-#content{
+#content2{
 				margin-left: 0px;
 			}
+
+#content img{
+  border-radius: 20%;
+  width: 300px;
+  height: 200px;
+
+}
 
 .contacts img {
   width: 100px;
@@ -132,7 +149,7 @@ h3 {
   margin-top: 130px;
 }
 
-h3:hover {
+h3, h1:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -149,4 +166,212 @@ h3:hover {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Activities page */
+
+#content{
+  margin-left: 100px;
+
+}
+
+.container1 {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.container2 {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.container3 {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.container4 {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.container5 {
+}
+
+
+#content .act1, .act3{
+  float: right;
+
+}
+
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8, .container9, .container10 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 300px;
+  height:0;
+  transition: .5s ease;
+  border-radius: 48%;
+  opacity: 0.7;
+
+}
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 300px;
+  height:0;
+  transition: .5s ease;
+  border-radius: 48%;
+  opacity: 0.7;
+
+}
+.overlay3 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 300px;
+  height:0;
+  transition: .5s ease;
+  border-radius: 48%;
+  opacity: 0.7;
+
+}
+.overlay4 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 300px;
+  height:0;
+  transition: .5s ease;
+  border-radius: 48%;
+  opacity: 0.7;
+
+}
+
+/* not working
+.overlay5 background{
+  width: 70px;
+  height: 70px;
+}
+
+*/
+
+.container1:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.container2:hover .overlay2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.container3:hover .overlay3 {
+  bottom: 0;
+  height: 100%;
+}
+
+.container4:hover .overlay4 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  color: rgb(255, 204, 102);
+  font-family: 'Raleway', sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.finalbutton img{
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-right: 510px;
+  margin-top: 30px;
+  opacity: 0.7;
+
+}
+
+.finalbutton img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+/* Gallery page */
+
+.container5 {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.container6 {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.container7 {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.container8 {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.container9 {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.container10 {
+  margin-left: 100px;
+  margin-bottom: 10px;
 }
